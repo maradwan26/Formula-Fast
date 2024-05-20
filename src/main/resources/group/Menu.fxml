@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handleKeyPress" prefHeight="540.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group.MenuController">
+   <children>
+      <ImageView fitHeight="568.0" fitWidth="908.0" layoutX="-7.0" layoutY="-16.0" onKeyPressed="#handleKeyPress" onKeyReleased="#handleKeyPress">
+         <image>
+            <Image url="@images/empty-race-track-background-aaron-foster.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="223.0" fitWidth="391.0" layoutX="263.0" layoutY="-29.0">
+         <image>
+            <Image url="@images/Formula-Fast-Logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="level_one_button" layoutX="75.0" layoutY="170.0" mnemonicParsing="false" onAction="#load_level_one" prefHeight="70.0" prefWidth="193.0" style="-fx-font-family: arial; -fx-font-size: 20;" text="Level 1 (+)" />
+      <Button fx:id="level_two_button" layoutX="361.0" layoutY="170.0" mnemonicParsing="false" onAction="#load_level_two" prefHeight="70.0" prefWidth="193.0" style="-fx-font-family: arial; -fx-font-size: 20;" text="Level 2 (-)" />
+      <Button fx:id="level_three_button" layoutX="660.0" layoutY="170.0" mnemonicParsing="false" onAction="#load_level_three" prefHeight="70.0" prefWidth="193.0" style="-fx-font-family: arial; -fx-translate-x: -3; -fx-font-size: 20;" text="Level 3 (+/-)" />
+      <Button fx:id="level_four_button" layoutX="75.0" layoutY="283.0" mnemonicParsing="false" onAction="#load_level_four" prefHeight="70.0" prefWidth="193.0" style="-fx-font-family: arial; -fx-translate-y: 1; -fx-font-size: 20;" text="Level 4 (x)" />
+      <Button fx:id="level_five_button" layoutX="361.0" layoutY="285.0" mnemonicParsing="false" onAction="#load_level_five" prefHeight="70.0" prefWidth="193.0" style="-fx-font-family: arial; -fx-font-size: 20;" text="Level 5 (÷)" />
+      <Button fx:id="level_six_button" layoutX="657.0" layoutY="285.0" mnemonicParsing="false" onAction="#load_level_six" prefHeight="70.0" prefWidth="193.0" style="-fx-font-family: arial; -fx-font-size: 20; -fx-translate-y: 0;" text="Level 6 (+/-/x/÷)" />
+      <Button layoutX="365.0" layoutY="431.0" mnemonicParsing="false" onAction="#load_leaderboard" prefHeight="53.0" prefWidth="193.0" style="-fx-font-family: arial; -fx-font-size: 25;" text="Leaderboard" />
+      <Label fx:id="text" layoutX="14.0" layoutY="29.0" prefHeight="44.0" prefWidth="193.0" text="Debug Mode Is Active" textAlignment="JUSTIFY" textFill="RED" visible="false">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="11.0" mnemonicParsing="false" onAction="#logout" prefHeight="25.0" prefWidth="95.0" text="Logout" />
+   </children>
+</AnchorPane>

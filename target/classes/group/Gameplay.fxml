@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#handle_key_press" prefHeight="540.0" prefWidth="900.0" style="-fx-background-color: #D3D3D3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group.GameplayController">
+   <children>
+      <ImageView fitHeight="340.0" fitWidth="941.0" layoutX="-41.0" layoutY="103.0">
+         <image>
+            <Image url="@images/road.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="159.0" fitWidth="279.0" layoutX="312.0" layoutY="-33.0">
+         <image>
+            <Image url="@images/Formula-Fast-Logo.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="username_label" layoutX="25.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player Username" textAlignment="CENTER" wrappingWidth="278.999999999999">
+         <font>
+            <Font name="Comic Sans MS" size="32.0" />
+         </font>
+      </Text>
+      <Text layoutX="638.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time Remaining" textAlignment="CENTER" wrappingWidth="233.6939920438714">
+         <font>
+            <Font name="Comic Sans MS" size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="time_label" layoutX="675.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="240 s" textAlignment="CENTER" wrappingWidth="174.4940408719964">
+         <font>
+            <Font name="Comic Sans MS" size="42.0" />
+         </font>
+      </Text>
+      <Text fx:id="level_label" layoutX="77.0" layoutY="504.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Level 1" textAlignment="CENTER" wrappingWidth="174.4940408719964">
+         <font>
+            <Font name="Comic Sans MS" size="34.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="40.0" fitWidth="338.0" layoutX="717.0" layoutY="248.0" style="-fx-rotate: 90; -fx-translate-y: 5; -fx-translate-x: -15;">
+         <image>
+            <Image url="@images/checkered-flag.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="622.0" layoutY="477.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You Are On Question" textAlignment="CENTER" wrappingWidth="263.29402866496514">
+         <font>
+            <Font name="Comic Sans MS" size="25.0" />
+         </font>
+      </Text>
+      <Text fx:id="question_number_label" layoutX="654.0" layoutY="528.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1/10" textAlignment="CENTER" wrappingWidth="198.4569314969964">
+         <font>
+            <Font name="Comic Sans MS" size="50.0" />
+         </font>
+      </Text>
+      <Text fx:id="question_label" layoutX="341.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="218.92155224945154">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <TextField fx:id="answer_field" alignment="CENTER" layoutX="367.0" layoutY="482.0" prefHeight="52.0" prefWidth="165.0" promptText="Answer">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </TextField>
+      <ImageView fx:id="opponent_sprite_1" fitHeight="100.0" fitWidth="120.0" layoutX="-12.0" layoutY="203.0" style="-fx-translate-x: 0.4;">
+         <image>
+            <Image url="@images/green-car.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="player_sprite" fitHeight="100.0" fitWidth="120.0" layoutX="-12.0" layoutY="114.0">
+         <image>
+            <Image url="@images/user-car-red.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="opponent_sprite_3" fitHeight="100.0" fitWidth="120.0" layoutX="-12.0" layoutY="373.0" style="-fx-translate-x: 2.3;">
+         <image>
+            <Image url="@images/grey-car.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="opponent_sprite_2" fitHeight="100.0" fitWidth="120.0" layoutX="-16.0" layoutY="290.0" style="-fx-translate-x: 4.3;">
+         <image>
+            <Image url="@images/blue-car.png" />
+         </image>
+      </ImageView>
+      <Line endX="752.5066528320312" layoutX="96.0" layoutY="185.0" startX="-100.0" strokeWidth="5.0" />
+      <Line endX="776.3095703125" layoutX="74.0" layoutY="274.0" startX="-100.0" strokeWidth="5.0" />
+      <Line endX="789.5066528320312" layoutX="59.0" layoutY="361.0" startX="-100.0" strokeWidth="5.0" />
+      <Button layoutX="539.0" layoutY="496.0" mnemonicParsing="false" onAction="#submit_answer" text="Submit" />
+      <Text fx:id="countdown_timer_label" fill="WHITE" layoutX="357.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0" text="START IN 5" wrappingWidth="189.32157666351407">
+         <font>
+            <Font name="Comic Sans MS" size="31.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

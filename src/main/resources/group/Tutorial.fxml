@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="900.0" style="-fx-background-color: #3D3C3C;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="group.TutorialController">
+   <children>
+      <ImageView fitHeight="473.0" fitWidth="783.0" layoutX="58.0" layoutY="62.0">
+         <image>
+            <Image url="@images/Formula-Fast-TutorialPage.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="finish" layoutX="594.0" layoutY="341.0" mnemonicParsing="false" onAction="#finish_clicked" prefHeight="84.0" prefWidth="192.0" style="-fx-font-size: 25; -fx-border-radius: 10; -fx-border-color: black; -fx-border-width: 3;" text="Finish..." />
+      <Text fill="WHITE" layoutX="322.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold; -fx-translate-x: -11; -fx-translate-y: -6;" text="TUTORIAL">
+         <font>
+            <Font size="62.0" />
+         </font>
+      </Text>
+      <Button fx:id="part1" layoutX="151.0" layoutY="159.0" mnemonicParsing="false" prefHeight="87.0" prefWidth="232.0" style="-fx-border-radius: 10; -fx-border-color: black; -fx-border-width: 2;" text="←This is your car, you will be racing against the other 3 cars. (click to continue)" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="part2" layoutX="410.0" layoutY="104.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="253.0" style="-fx-border-radius: 10; -fx-border-color: black; -fx-border-width: 2;" text="This is the time remaining  →     before the race finishes, try to finish the level before it ends! (click to continue)" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="part3" layoutX="285.0" layoutY="265.0" mnemonicParsing="false" prefHeight="107.0" prefWidth="253.0" style="-fx-border-radius: 10; -fx-border-color: black; -fx-border-width: 2;" text="Every time you answer correct your car will move towards the finish line. (click to continue)" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="part4" layoutX="124.0" layoutY="389.0" mnemonicParsing="false" prefHeight="134.0" prefWidth="239.0" style="-fx-border-radius: 10; -fx-border-color: black; -fx-border-width: 2;" text="This is where you will type the answer to each question. You can hit enter or click &quot;Submit&quot; to submit your answer! → (click to continue)" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="part5" layoutX="575.0" layoutY="230.0" mnemonicParsing="false" prefHeight="90.0" prefWidth="221.0" style="-fx-border-radius: 10; -fx-border-color: black; -fx-border-width: 2;" text="Reach the finish line before the other cars to win! → (click to continue)" wrapText="true">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
